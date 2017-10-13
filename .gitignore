@@ -1,6 +1,6 @@
-bin/
-obj/
 .vscode/
 .vs/
 
-*.suo
+bin/
+obj/
+
