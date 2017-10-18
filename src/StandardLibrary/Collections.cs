@@ -27,7 +27,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void SortedSetEnumerableCtor()
+		public static void SortedSetEnumerableCtorDuplicate()
 		{
 			var sw = Stopwatch.StartNew();
 			var ss = new SortedSet<int>(Enumerable.Repeat(42, 400_000));
@@ -116,10 +116,7 @@ namespace StandardLibrary
 			while (true)
 			{
 				var q = new ConcurrentQueue<int>();
-				int gen0 = GC.CollectionCount(0);
-				int gen1 = GC.CollectionCount(1);
-				int gen2 = GC.CollectionCount(2);
-
+				int gen0 = GC.CollectionCount(0), gen1 = GC.CollectionCount(1), gen2 = GC.CollectionCount(2);
 				for (int i = 0; i < 100_000_000; i++)
 				{
 					q.Enqueue(i);

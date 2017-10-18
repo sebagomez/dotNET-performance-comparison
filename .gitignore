@@ -1,6 +1,9 @@
 .vscode/
 .vs/
-
 bin/
 obj/
+PublishFolders/
+
+*.user
+
 

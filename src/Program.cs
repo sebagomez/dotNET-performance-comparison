@@ -12,17 +12,17 @@ namespace ConsoleApp
 			{
 				//For a detailed explanation of each case take a look at https://blogs.msdn.microsoft.com/dotnet/2017/06/07/performance-improvements-in-net-core/
 
-				CollectionsTests.QueueEnqueueDequeue();
-				//CollectionsTests.SortedSetEnumerableCtor();
-				//CollectionsTests.SortedSetMin();
+				//CollectionsTests.QueueEnqueueDequeue(); // <-- Start here 2x
+				//CollectionsTests.SortedSetEnumerableCtorDuplicate(); // 600x
+				//CollectionsTests.SortedSetMin(); // <-- 13x
 				//CollectionsTests.ListAddRemoveAt();
-				//CollectionsTests.ConcurrentQueueEnqueueTryDequeue();
+				//CollectionsTests.ConcurrentQueueEnqueueTryDequeue(); // <--
 				//CollectionsTests.ConcurrentQueueProducerSpinningConsumer();
-				//CollectionsTests.ConcurrentQueueEnqueueTryDequeueMemory();
+				CollectionsTests.ConcurrentQueueEnqueueTryDequeueMemory(); // <-- MEM
 				//CollectionsTests.ConcurrentBagAddTryTake();
-				//LinQTests.ConcatTiming(); // <--
-				//LinQTests.OredBySkipFirst(); // <--
-				//LinQTests.SelectToList();
+				//LinQTests.ConcatTiming(); 
+				//LinQTests.OredBySkipFirst(); // <-- 8x
+				//LinQTests.SelectToList(); // <--
 				//LinQTests.ToArray();
 				//CompressionTests.CompressDecompress();
 				//CryptographyTests.ComputeHash();
