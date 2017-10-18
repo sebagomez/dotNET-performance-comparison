@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace StandardLibrary
 {
-	public class Serialization
+	public class SerializationTests
     {
 		[Serializable]
 		private class Book

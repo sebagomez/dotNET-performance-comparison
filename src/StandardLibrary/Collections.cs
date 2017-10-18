@@ -9,7 +9,7 @@ namespace StandardLibrary
 {
 	public  class CollectionsTests
     {
-		public static void Queue()
+		public static void QueueEnqueueDequeue()
 		{
 			while (true)
 			{
@@ -27,14 +27,14 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void SortedSet()
+		public static void SortedSetEnumerableCtor()
 		{
 			var sw = Stopwatch.StartNew();
 			var ss = new SortedSet<int>(Enumerable.Repeat(42, 400_000));
 			Console.WriteLine(sw.Elapsed);
 		}
 
-		public static void SortedSet2()
+		public static void SortedSetMin()
 		{
 			int result;
 			while (true)
@@ -55,7 +55,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void List()
+		public static void ListAddRemoveAt()
 		{
 			while (true)
 			{
@@ -71,7 +71,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void ConcurrentQueue()
+		public static void ConcurrentQueueEnqueueTryDequeue()
 		{
 			while (true)
 			{
@@ -87,7 +87,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void ConcurrentQueue2()
+		public static void ConcurrentQueueProducerSpinningConsumer()
 		{
 			while (true)
 			{
@@ -111,7 +111,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void ConcurrentQueue2GC()
+		public static void ConcurrentQueueEnqueueTryDequeueMemory()
 		{
 			while (true)
 			{
@@ -130,7 +130,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void ConcurrentBag()
+		public static void ConcurrentBagAddTryTake()
 		{
 			while (true)
 			{

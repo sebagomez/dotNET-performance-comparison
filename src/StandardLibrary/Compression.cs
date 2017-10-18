@@ -5,7 +5,7 @@ using System.IO.Compression;
 
 namespace StandardLibrary
 {
-	public class Compression
+	public class CompressionTests
     {
 		public static void CompressDecompress()
 		{

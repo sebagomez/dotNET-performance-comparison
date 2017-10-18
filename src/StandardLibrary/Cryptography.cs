@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace StandardLibrary
 {
-	public class Cryptography
+	public class CryptographyTests
     {
 		public static void ComputeHash()
 		{

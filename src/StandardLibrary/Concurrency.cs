@@ -4,9 +4,9 @@ using System.Threading;
 
 namespace StandardLibrary
 {
-	public class Concurrency
+	public class ConcurrencyTests
 	{
-		public static void ThreadPoolProcessorCount()
+		public static void ThreadPoolQueuePoolWorkITemProcessorCount()
 		{
 			while (true)
 			{
@@ -33,7 +33,7 @@ namespace StandardLibrary
 
 		}
 
-		public static void SpinLock()
+		public static void SpinLockTryEnterAlreadyAcquired()
 		{
 			while (true)
 			{
@@ -51,7 +51,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void LazyValues()
+		public static void LazyValue()
 		{
 			int result;
 			while (true)

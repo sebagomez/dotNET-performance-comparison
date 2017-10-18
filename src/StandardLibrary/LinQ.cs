@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 
 namespace StandardLibrary
 {
-    public class LinQ
+	public class LinQTests
     {
-		public static void Concat()
+		public static void ConcatTiming()
 		{
 			IEnumerable<int> zeroToTen = Enumerable.Range(0, 10);
 			IEnumerable<int> result = zeroToTen;
@@ -25,7 +24,7 @@ namespace StandardLibrary
 			Console.WriteLine(sw.Elapsed);
 		}
 
-		public static void OredBySkip()
+		public static void OredBySkipFirst()
 		{
 			IEnumerable<int> tenMillionToZero = Enumerable.Range(0, 10_000_000).Reverse();
 			while (true)

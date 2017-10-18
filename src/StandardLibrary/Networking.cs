@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -8,15 +7,14 @@ using System.Net.Security;
 using System.Net.Sockets;
 using System.Security.Authentication;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace StandardLibrary
 {
-	public class Networking
+	public class NetworkingTests
 	{
-		public static void SocketSendReceive()
+		public static void NetworkingSynchronousCompletitionSendReceive()
 		{
 			using (Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
 			using (Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
@@ -62,7 +60,7 @@ namespace StandardLibrary
 
 		}
 
-		public async static Task StreamWriteCopyTo()
+		public async static Task NetworkStreamWriteAsyncCopyToAsync()
 		{
 			using (Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
 			using (Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
@@ -102,7 +100,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public async static Task SslNetworkStream()
+		public async static Task SslStreamNetworkStream()
 		{
 			var certCollection = new X509Certificate2Collection();
 			certCollection.Import("testcert.pfx", "testcertificate", X509KeyStorageFlags.DefaultKeySet);

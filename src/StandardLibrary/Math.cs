@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
-using System.Text;
 
 namespace StandardLibrary
 {
-    public class Math
+	public class MathTests
     {
 		public static void BigIntegerModPow()
 		{
@@ -28,7 +26,7 @@ namespace StandardLibrary
 			return new BigInteger(value);
 		}
 
-		public static void DivRem()
+		public static void MathDivRem()
 		{
 			long a = 99, b = 10, div, rem;
 

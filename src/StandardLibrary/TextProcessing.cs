@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace StandardLibrary
 {
-	public class TextProcessing
+	public class TextProcessingTests
     {
 		public static void RegexIsMatch()
 		{
@@ -24,7 +24,7 @@ namespace StandardLibrary
 
 		}
 
-		public static void UrlDecode()
+		public static void WebUtilityUrlDecode()
 		{
 			var sw = new Stopwatch();
 			int gen0 = GC.CollectionCount(0);
@@ -39,7 +39,7 @@ namespace StandardLibrary
 
 		}
 
-		public static void UTF8EncodingGetBytes()
+		public static void EncodingUTF8GetBytes()
 		{
 			string s = new string(Enumerable.Range(0, 1024).Select(i => (char)('a' + i)).ToArray());
 			while (true)
@@ -100,7 +100,7 @@ namespace StandardLibrary
 
 		}
 
-		public static void StringIndexOf()
+		public static void StringIndexOfChar()
 		{
 			string s = string.Concat(Enumerable.Repeat("a", 100)) + "b";
 			while (true)
@@ -115,7 +115,7 @@ namespace StandardLibrary
 			}
 		}
 
-		public static void StringStartsWith()
+		public static void StringStartsWithOrdinal()
 		{
 			string s = "abcdefghijklmnopqrstuvwxyz";
 			while (true)

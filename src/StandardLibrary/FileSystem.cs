@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace StandardLibrary
 {
-	public class FileSystem
+	public class FileSystemTests
     {
 		public static async Task FileStreamAsyncReadWrite()
 		{
