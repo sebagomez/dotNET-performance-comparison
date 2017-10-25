@@ -33,7 +33,7 @@ namespace StandardLibrary
 			var sw = Stopwatch.StartNew();
 			for (int i = 0; i < 100_000_000; i++)
 			{
-				div = System.Math.DivRem(a, b, out rem);
+				div = Math.DivRem(a, b, out rem);
 			}
 			Console.WriteLine(sw.Elapsed);
 		}
