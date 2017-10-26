@@ -10,4 +10,6 @@ The VS2017 solution (dotNet Performance.sln) has three projects:
 
 Every function that tests a feature is in the StandardLibrary, so the code for both projects is exactly the same. Even the code of every console application is a shared source file.
 
+<img src="components.png" alt="solution" width="700">
+
 It works thanks to the fact that both .NET Framework 4.7 and .NET Core 2.0 are .NET Standard 2.0 compatible. [More info here](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
