@@ -1,7 +1,7 @@
 # .NET Performance Comparison
 
-This is a simple solution that proves the performance imrpvements of .NET Core 2.0 over .NET Framework 4.7.
-It's based on the blog post [Performance Improvements in .NET Core](https://blogs.msdn.microsoft.com/dotnet/2017/06/07/performance-improvements-in-net-core/)
+This is a simple solution that proves the performance imrpvements of .NET Core 2.0 over .NET Framework 4.7.  
+It's based on the blog post [Performance Improvements in .NET Core](https://blogs.msdn.microsoft.com/dotnet/2017/06/07/performance-improvements-in-net-core/) it was shown as part of my presentation on the fourth edition (2017) of the [NetConfUY](http://netconf.uy) called ".NET Core for everyone".
 
 The VS2017 solution (dotNet Performance.sln) has three projects:
 - StandardLibrary is a .NET Standard 2.0 library
